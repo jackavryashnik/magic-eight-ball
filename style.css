@@ -26,8 +26,14 @@ h2{
     font-size: 18px;
 }
 
-.enterUsername{
-    float: right;
+form{
+    direction: rtl;
+}
+
+.nameOutput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main{
