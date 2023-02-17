@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic 8 ball</title>
+    <script src="/main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -22,15 +23,11 @@
             <div class="whitesurface">
                 <p id="response">8</p>
             </div>
-        </div>
-    
-        <div class="inputfield">
-            <input type="text" id="clear" placeholder="Ask Me Anything!">
-            <button id="askme" onclick="myFunction()">Enter</button>
-        </div>
-    
+            </div>
+            <div class="inputfield">
+                <input type="text" placeholder="Ask Me Anything!" id="clear" />
+                <button id="askme" onclick="myFunction()">Enter</button>
+            </div>
     </main>
-    <!-- Script -->
-    <script src="/main.js"></script>
 </body>
 </html>
