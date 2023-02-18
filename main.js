@@ -48,8 +48,8 @@ function generateRandomResponse() {
 }
 
 function displayResponse() {
-  const nameInput = document.getElementById("nameInput");
-  const question = nameInput.value;
+  const questionInput = document.getElementById("questionInput");
+  const question = questionInput.value;
 
   const answer = generateRandomResponse();
 
