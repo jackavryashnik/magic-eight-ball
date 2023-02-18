@@ -9,25 +9,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Куля передбачень</h1>
-        <form class="enterUsername">
-            <h2>Введіть ваше ім'я для більш вірного передбачення</h2>
-            <input type="text" class="nameInput" placeholder="Enter Your name">
-            <button id="enterName" сlass="enterName">Enter</button>
-        </form>
-        <div class="nameOutput"></div>
-    </header>
-    <main>
-        <div class="ball">
-            <div class="whitesurface">
-                <p id="response">8</p>
-            </div>
-            </div>
-            <div class="inputfield">
-                <input type="text" placeholder="Ask Me Anything!" id="clear" />
-                <button id="askme" onclick="myFunction()">Enter</button>
-            </div>
-    </main>
+<header>
+    <h1>Куля передбачень</h1>
+    <h2>Введіть ваше ім'я для більш вірного передбачення</h2>
+    <article class="flex">
+        <input type="text" id="nameInput" placeholder="Enter Your name">
+        <button onclick="displayGreeting()">Enter</button>
+    </article>
+    <div id="greetingOutput">Hello!</div>
+</header>
+<main>
+    <div class="ball">
+        <div class="whitesurface">
+        <p id="response">8</p>
+        </div>
+    </div>
+    <div class="inputfield">
+        <input type="text" placeholder="Ask Me Anything!" id="clear" />
+        <button id="askme">Enter</button>
+    </div>
+</main>
+<script src="script.js"></script>
 </body>
 </html>

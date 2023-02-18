@@ -24,10 +24,9 @@ h1{
 
 h2{
     font-size: 18px;
-}
-
-form{
     direction: rtl;
+    margin-right: 5%;
+    margin-bottom: 10px;
 }
 
 .nameOutput{
@@ -70,7 +69,6 @@ input{
 .inputfield input{
     position: absolute;
     top: 65vh;
-    
 }
 
 input:focus{
@@ -115,4 +113,18 @@ button:active{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5%;
+}
+
+#greetingOutput{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    font-weight: 600;
 }
