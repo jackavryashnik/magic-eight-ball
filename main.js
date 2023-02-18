@@ -19,28 +19,28 @@ function generateRandomResponse() {
 
   switch (randomNumber) {
     case 0:
-      eightBall = "Signs point to yes";
+      eightBall = "Знаки говорять так";
       break;
     case 1:
-      eightBall = "It is certain";
+      eightBall = "Це певно";
       break;
     case 2:
-      eightBall = "It is decidedly so";
+      eightBall = "Це безперечно";
       break;
     case 3:
-      eightBall = "Reply hazy try again";
+      eightBall = "Відповідь невизначена, спробуйте ще раз";
       break;
     case 4:
-      eightBall = "Cannot predict now";
+      eightBall = "Не можу передбачити зараз";
       break;
     case 5:
-      eightBall = "Do not count on it";
+      eightBall = "Не став на це";
       break;
     case 6:
-      eightBall = "My sources say no";
+      eightBall = "Мої джерела кажуть ні";
       break;
     case 7:
-      eightBall = "Outlook not so good";
+      eightBall = "Перспективи не дуже гарні";
       break;
   }
 
@@ -48,8 +48,18 @@ function generateRandomResponse() {
 }
 
 function displayResponse() {
-  responseEl.innerHTML = generateRandomResponse();
+  const nameInput = document.getElementById("nameInput");
+  const question = nameInput.value;
+
+  const answer = generateRandomResponse();
+
+  // Display the response message
+  responseEl.innerHTML = answer;
   responseEl.style.fontSize = "18px";
+
+  // Save the question and answer to history
+  saveToHistory(question, answer);
+
   setTimeout(function() {
     responseEl.innerHTML = "8";
     responseEl.style.fontSize = "120px";
@@ -58,3 +68,33 @@ function displayResponse() {
 }
 
 document.getElementById("askme").addEventListener("click", displayResponse);
+
+// Збереження історії діалогу
+let history = [];
+
+function saveToHistory(question, answer) {
+  // Додаємо запитання та відповідь до масиву історії
+  history.push({ question: question, answer: answer });
+
+  // Якщо масив історії перевищує 10 елементів, видаляємо найстаріші елементи
+  if (history.length > 10) {
+    history.shift();
+  }
+
+  // Оновлюємо список запитань та відповідей на сторінці
+  updateHistory();
+}
+
+function updateHistory() {
+  let historyList = document.getElementById("history");
+
+  // Очищаємо список перед оновленням
+  historyList.innerHTML = "";
+
+  // Додаємо кожне запитання та відповідь з історії до списку
+for (let i = 0; i < history.length; i++) {
+  let item = document.createElement("li");
+  item.innerText = history[i].question + " - " + history[i].answer;
+  historyList.appendChild(item);
+}
+}
