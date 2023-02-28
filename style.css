@@ -152,3 +152,212 @@ footer {
     margin-bottom: 5px;
   }
   
+
+@media only screen and (max-width: 480px) {
+    /* стили для устройств с максимальной шириной экрана 480px или меньше */
+    body {
+    font-size: 12px;
+    }
+    
+    h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+    
+    h2 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    }
+    
+    main {
+    padding: 10px;
+    }
+    
+    .ball {
+    width: 150px;
+    height: 150px;
+    }
+    
+    .whitesurface {
+    width: 50px;
+    height: 50px;
+    }
+    
+    .inputfield input {
+    padding: 8px;
+    font-size: 10px;
+    }
+    
+    .inputfield button {
+    padding: 6px 30px;
+    font-size: 14px;
+    }
+    
+    #response {
+    font-size: 80px;
+    }
+    
+    #greetingOutput {
+    font-size: 16px;
+    margin: 20px;
+    }
+    
+    footer h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    }
+    
+    footer li {
+    font-size: 12px;
+    line-height: 1.3;
+    margin-bottom: 3px;
+    }
+    }
+
+/* Медиа запрос для телефонов */
+@media (max-width: 767px) {
+    header {
+    height: 8vh;
+    }
+    
+    h1 {
+    font-size: 24px;
+    }
+    
+    h2 {
+    font-size: 16px;
+    margin-right: 2%;
+    }
+    
+    .nameOutput {
+    font-size: 18px;
+    }
+    
+    main {
+    height: auto;
+    padding: 20px;
+    }
+    
+    .ball {
+    width: 200px;
+    height: 200px;
+    }
+    
+    .inputfield input {
+    top: 55vh;
+    }
+    
+    .inputfield button {
+    top: 65vh;
+    font-size: 18px;
+    }
+    
+    #response {
+    width: 50px;
+    font-size: 80px;
+    }
+    
+    .whitesurface {
+    width: 100px;
+    height: 100px;
+    }
+    
+    .flex {
+    margin-right: 2%;
+    }
+    
+    #greetingOutput {
+    margin: 20px;
+    font-size: 18px;
+    }
+    
+    footer {
+    padding: 10px;
+    }
+    
+    footer h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    }
+    
+    footer li {
+    font-size: 12px;
+    line-height: 1.2;
+    }
+    }
+    
+    /* Медиа запрос для планшетов */
+    @media (min-width: 768px) and (max-width: 1023px) {
+    header {
+    height: 8vh;
+    }
+    
+    h1 {
+    font-size: 32px;
+    }
+    
+    h2 {
+    font-size: 18px;
+    margin-right: 2%;
+    }
+    
+    .nameOutput {
+    font-size: 24px;
+    }
+    
+    main {
+    height: auto;
+    padding: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    }
+    
+    .ball {
+    width: 250px;
+    height: 250px;
+    }
+    
+    .inputfield input {
+    top: 60vh;
+    font-size: 18px;
+    }
+    
+    .inputfield button {
+    top: 70vh;
+    font-size: 22px;
+    }
+    
+    #response {
+    width: 60px;
+    font-size: 100px;
+    }
+    
+    .whitesurface {
+    width: 120px;
+    height: 120px;
+    }
+    
+    .flex {
+    margin-right: 2%;
+    }
+    
+    #greetingOutput {
+    margin: 30px;
+    font-size: 24px;
+    }
+    
+    footer {
+    padding: 20px;
+    }
+    
+    footer h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    }
+    
+    footer li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    }
+    }
